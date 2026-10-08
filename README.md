@@ -1,22 +1,52 @@
-Óticas Vida
-Projeto em React com Vite.
+# Óticas Vida
 
-Executar no computador
-Abra a pasta no VS Code.
-Abra o terminal e execute npm install.
-Execute npm run dev.
-Organização
-src/main.jsx: inicia o React.
-src/App.jsx: reúne os componentes e configura a animação de rolagem.
-src/components/Topo.jsx: logo e menu.
-src/components/SecaoCapa.jsx: apresentação inicial.
-src/components/SecaoProdutos.jsx: produtos, preços e benefícios.
-src/components/SecaoSobre.jsx: informações da loja.
-src/components/SecaoContato.jsx: contatos e redes sociais.
-src/components/Rodape.jsx: texto final da página.
-src/styles.css: cores, tamanhos e adaptações para celular.
-public/assets: imagens utilizadas.
-A animação usa o IntersectionObserver do navegador. Quando um elemento aparece na tela, recebe a classe is-visible. O CSS faz a transição de posição e transparência.
+Site de uma ótica, desenvolvido como projeto de estudo em **React e Vite**.
 
-Publicar na Vercel
-Framework: Vite. Comando de build: npm run build. Pasta de saída: dist
+## Sobre o projeto
+
+A página apresenta os produtos, informações sobre a loja e seus contatos.
+
+- Layout adaptado para computador e celular.
+- Componentes separados para cada seção.
+- Animação suave ao rolar a página.
+- Fonte Tahoma e cores seguindo o layout proposto.
+
+## Tecnologias utilizadas
+
+- React
+- Vite
+- JavaScript
+- CSS
+
+## Como executar
+
+Instale as dependências:
+
+```bash
+npm install
+```
+
+Inicie o projeto:
+
+```bash
+npm run dev
+```
+
+Abra no navegador o endereço mostrado no terminal.
+
+## Estrutura do projeto
+
+| Arquivo ou pasta | Função |
+| --- | --- |
+| `src/App.jsx` | Reúne as seções e configura a animação |
+| `src/components` | Componentes da página |
+| `src/styles.css` | Estilos e ajustes para celular |
+| `public/assets` | Imagens e ícones |
+
+## Publicação
+
+Projeto configurado para a Vercel:
+
+- **Framework:** Vite
+- **Comando de build:** `npm run build`
+- **Pasta de saída:** `dist`
