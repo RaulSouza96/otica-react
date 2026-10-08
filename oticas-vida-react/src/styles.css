@@ -1,0 +1,320 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Tahoma, sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  color: #000;
+  background: #fff;
+}
+.limite {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+header {
+  width: 100%;
+  padding: 20px;
+}
+.topo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.topo img {
+  width: 200px;
+  display: block;
+}
+nav {
+  display: flex;
+  gap: 20px;
+}
+nav a {
+  color: #000;
+  text-decoration: none;
+  font-size: 16px;
+}
+a:focus-visible {
+  outline: 2px solid #4a4a4a;
+  outline-offset: 5px;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+.capa {
+  height: 90vh;
+  background: #05031b url("/assets/capa.png") center center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+.texto-capa {
+  max-width: 500px;
+  color: #fff;
+}
+.texto-capa p {
+  font-size: 32px;
+  color: #c4c4c4;
+}
+.texto-capa h1 {
+  font-size: 52px;
+  letter-spacing: 5px;
+  line-height: 1.35;
+  margin: 20px 0;
+}
+.produtos,
+.sobre,
+.contato {
+  width: 100%;
+  padding: 100px 20px;
+  text-align: center;
+}
+h2 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+.produtos > .limite > p,
+.sobre > .limite > p,
+.contato > .limite > p {
+  font-size: 16px;
+  line-height: 2;
+}
+.grade-produtos {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  margin: 50px 0 60px;
+}
+.produto {
+  background: #f6f6f6;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #4a4a4a;
+}
+.produto h3 {
+  font-size: 30px;
+}
+.produto img {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  height: 140px;
+  object-fit: contain;
+  margin: 25px auto;
+}
+.produto p {
+  font-size: 24px;
+  font-weight: bold;
+}
+.produtos > .limite > h3 {
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+.beneficios {
+  list-style-position: inside;
+  font-size: 16px;
+  line-height: 2;
+}
+.sobre {
+  background: #f8f7ff;
+}
+.sobre h2 {
+  font-size: 20px;
+}
+.grade-sobre {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 60px;
+  border: 1px solid #c4c4c4;
+}
+.grade-sobre > img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+.grade-sobre article {
+  height: 300px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+  border: 1px solid #c4c4c4;
+}
+.grade-sobre h3 {
+  font-size: 36px;
+  letter-spacing: 5px;
+  margin-bottom: 30px;
+}
+.grade-sobre p {
+  font-size: 22px;
+  color: #4a4a4a;
+}
+.contato {
+  background: #05031b;
+  color: #fff;
+}
+.blocos-contato {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 35px;
+  text-align: left;
+}
+.bloco {
+  border: 1px solid #c4c4c4;
+  padding: 15px;
+  width: 350px;
+  border-radius: 3px;
+}
+.bloco h3 {
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+.bloco p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  margin: 10px 0;
+}
+.bloco img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+.bloco a {
+  color: #fff;
+  text-decoration: none;
+}
+.bloco a:hover {
+  text-decoration: underline;
+}
+footer {
+  padding: 20px;
+  text-align: center;
+  background: #000;
+  color: #fff;
+  font-size: 16px;
+}
+@media (max-width: 768px) {
+  .texto-capa h1 {
+    font-size: 40px;
+  }
+  .texto-capa p {
+    font-size: 24px;
+  }
+  .produto h3 {
+    font-size: 24px;
+  }
+  .grade-sobre h3 {
+    font-size: 25px;
+  }
+  .grade-sobre p {
+    font-size: 16px;
+  }
+  .bloco h3 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 550px) {
+  header {
+    padding: 20px;
+  }
+  .topo {
+    flex-direction: column;
+    gap: 15px;
+  }
+  nav {
+    width: 100%;
+    justify-content: space-around;
+    border-top: 1px solid #4a4a4a;
+    padding-top: 10px;
+    gap: 10px;
+  }
+  nav a {
+    font-size: 14px;
+  }
+  .capa {
+    background-position: 90% center;
+    padding: 0 20px;
+  }
+  .texto-capa {
+    background: rgba(0, 0, 0, 0.65);
+    padding: 10px;
+  }
+  .texto-capa h1 {
+    font-size: 40px;
+    letter-spacing: 5px;
+  }
+  .texto-capa p {
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  .grade-produtos {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .produto h3 {
+    font-size: 24px;
+  }
+  .produto p {
+    font-size: 20px;
+  }
+  .grade-sobre {
+    grid-template-columns: 1fr;
+  }
+  .grade-sobre h3 {
+    font-size: 24px;
+    letter-spacing: 4px;
+  }
+  .grade-sobre p {
+    font-size: 16px;
+  }
+  .blocos-contato {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  .bloco {
+    width: 100%;
+    max-width: 350px;
+  }
+  .bloco h3 {
+    font-size: 24px;
+  }
+  footer {
+    font-size: 14px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s ease;
+  transition-delay: var(--reveal-delay, 0ms);
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
